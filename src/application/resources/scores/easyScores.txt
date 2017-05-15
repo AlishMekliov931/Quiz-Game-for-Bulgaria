@@ -1,0 +1,7 @@
+Blagoevgrad ; Koko Shanel ; 20
+Pleven ; Gucci ; 20
+Velikoturnovo ; Boko ; 10
+Plovdiv ; Uki ; 10
+Sofia ; User ; 40
+Sofia ; 3434444 ; 40
+Blagoevgrad ; User ; 20

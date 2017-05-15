@@ -1,0 +1,11 @@
+Plovdiv ; Pipin ; 30
+Varna ; Moncho ; 20
+Sofia ; Pipilota ; 30
+Blagoevgrad ; Puhcho ; 10
+Pleven ; SingSing3 ; 20
+Pleven ; PinPin ; 30
+Pleven ; Elf ; 30
+Velikoturnovo ; Uki ; 10
+Sofia ; Omni ; 0
+Plovdiv ; Pukicho ; 10
+Burgas ; Smyrf ; 0

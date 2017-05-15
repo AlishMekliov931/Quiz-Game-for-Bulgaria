@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.CitiesController">
+    <center>
+        <AnchorPane fx:id="mapPane" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="mapImg" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <image>
+                        <Image url="@../images/bulgaria2.png" />
+                    </image>
+                    <effect>
+                        <BoxBlur />
+                    </effect>
+                </ImageView>
+                <Button fx:id="varna" graphicTextGap="10.0" layoutX="680.0" layoutY="171.0" onAction="#onCityQuestion" text="Varna">
+                    <font>
+                        <Font name="Algerian" size="18.0" />
+                    </font>
+                </Button>
+             <Button fx:id="ruse" graphicTextGap="10.0" layoutX="457.0" layoutY="25.0" onAction="#onCityQuestion" text="Ruse">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+             </Button>
+             <Button fx:id="sofia" graphicTextGap="10.0" layoutX="127.0" layoutY="273.0" onAction="#onCityQuestion" text="Sofia">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+              </Button>
+              <Button fx:id="burgas" graphicTextGap="10.0" layoutX="623.0" layoutY="312.0" onAction="#onCityQuestion" text="Burgas">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+              </Button>
+              <Button fx:id="blagoevgrad" graphicTextGap="10.0" layoutX="128.0" layoutY="456.0" onAction="#onCityQuestion" text="Blagoevgrad">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+              </Button>
+              <Button fx:id="plovdiv" graphicTextGap="10.0" layoutX="400.0" layoutY="362.0" onAction="#onCityQuestion" text="Plovdiv">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+              </Button>
+              <Button fx:id="pleven" graphicTextGap="10.0" layoutX="263.0" layoutY="178.0" onAction="#onCityQuestion" text="Pleven">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+              </Button>
+              <Button fx:id="velikoturnovo" graphicTextGap="10.0" layoutX="436.0" layoutY="178.0" onAction="#onCityQuestion" text="V.Tyrnovo">
+                 <font>
+                    <Font name="Algerian" size="18.0" />
+                 </font>
+              </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <GridPane fx:id="topPane" alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+          <Label fx:id="labelChooseCity" text="Избери град" textFill="#ffa100" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                <font>
+                  <Font name="Times New Roman Bold Italic" size="49.0" />
+                </font>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane fx:id="bottomPane" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+             <Label fx:id="hintLabel" contentDisplay="CENTER" text="Label" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="Lucida Sans Unicode" size="26.0" />
+                 </font>
+             </Label>
+         </children>
+      </GridPane>
+   </bottom>
+   <left>
+      <GridPane fx:id="leftPane" prefHeight="586.0" prefWidth="95.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+               <Button fx:id="backButton" alignment="CENTER" layoutX="48.0" layoutY="541.0" mnemonicParsing="false" onAction="#OnBack" text="Back" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Button>
+               <VBox fx:id="difficultyBox">
+                  <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelInputUserName" text="Label" />
+                        <TextField fx:id="inputUserName" alignment="CENTER_RIGHT" text="username" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                              <Label fx:id="labelDifficulty">CHOOSE_DIFFICULTY</Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                                    <Button fx:id="buttonEasy" mnemonicParsing="false" text="EASY" />
+                                    <Button fx:id="buttonNormal" mnemonicParsing="false" text="NORMAL" />
+                                    <Button fx:id="buttonHard" mnemonicParsing="false" text="DIFFICULT" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  </children>
+               </VBox>
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <GridPane fx:id="rightPane" alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </GridPane>
+   </right>
+</BorderPane>
